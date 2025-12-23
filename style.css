@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+.left-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 20px;
+}
+
+.left-nav img {
+    width: 60px;
+    padding-right: 10px;
+}
+
+.left-nav h5 {
+    cursor: pointer;
+}
+
+.right-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.right-nav li:first-child {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.right-nav button {
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.right-nav li:nth-child(2) button {
+    color: black;
+    background-color: white;
+}
+
+.right-nav li:nth-child(3) button {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    transition: 0.3s;
+}
+
+.container {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.first {
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    padding: 0;
+}
+
+.left-box {
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-97315.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: 50%;
+    display: flex;
+}
+
+.right-box {
+    height: 500px;
+    width: 50%;
+    background-color: #32462f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.right-box button {
+    background-color: transparent;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right-box button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.right-box h1 {
+    font-size: 60px;
+}
+
+.right-box h3 {
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.second {
+    flex-direction: row-reverse;
+}
+
+.second h1 {
+    font-size: 30px;
+}
+
+.second h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.second .left-box {
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-97180.jpg);
+}
+
+.third .left-box {
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-97313.png);
+}
+
+.third h1 {
+    font-size: 40px;
+}
+
+.third h3 {
+    font-size: 20px;
+}
+
+.forth {
+    flex-direction: row-reverse;
+}
+
+.forth .left-box {
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-97297.jpg);
+}
+
+.forth .right-box {
+    background-color: #d1d1aa;
+}
+
+.forth h1 {
+    font-size: 40px;
+}
+
+.forth h3 {
+    font-size: 25px;
+}
+
+.fifth .left-box {
+    background-image: url(https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-97001.jpg);
+}
+
+.fifth .right-box {
+    background-color: #006242;
+}
+
+.fifth h1 {
+    font-size: 40px;
+}
+
+.fifth h3 {
+    font-size: 25px;
+}
+
+.sixth p, .seven p {
+    margin-top: 60px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 20px;
+    gap: 40px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 10px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.container1 ol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container1 ol li:first-child {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container1 ol li {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container1 ol li:not(:first-child):hover {
+    opacity: 0.7;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container-2 {
+    padding: 40px 20px;
+}
+
+.container-2 ol {
+    display: flex;
+    gap: 20px;
+    font-size: 27px;
+}
+
+.container-2 ol li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container-2 ol li:hover {
+    opacity: 0.6;
+}
+
+.container-3 {
+    padding: 20px;
+}
+
+.container-3 ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.container-3 li {
+    cursor: pointer;
+}
+
+.container-3 li:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .right-box h1 {
+        font-size: 45px;
+    }
+
+    .right-box h3 {
+        font-size: 22px;
+    }
+
+    .container1 {
+        gap: 20px;
+    }
+
+    .container1 ol {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    nav {
+        height: 80px;
+        padding-inline: 15px;
+    }
+
+    .left-nav h5 {
+        display: none;
+    }
+
+    .right-nav li:first-child h4 {
+        display: none;
+    }
+
+    .right-nav {
+        gap: 10px;
+    }
+
+    .right-nav button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .first {
+        flex-direction: column !important;
+        min-height: auto;
+    }
+
+    .left-box, .right-box {
+        width: 100% !important;
+        height: 400px;
+    }
+
+    .right-box {
+        padding: 30px 20px;
+    }
+
+    .right-box h1 {
+        font-size: 32px !important;
+    }
+
+    .right-box h3 {
+        font-size: 18px !important;
+    }
+
+    .right-box button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .container1 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .container1 ol {
+        gap: 12px;
+    }
+
+    .container-2 ol {
+        flex-wrap: wrap;
+        font-size: 24px;
+        justify-content: center;
+    }
+
+    .container-3 ol {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sixth p, .seven p {
+        font-size: 14px;
+        margin-top: 40px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .left-nav img {
+        width: 40px;
+    }
+
+    .right-nav button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .left-box, .right-box {
+        height: 350px;
+    }
+
+    .right-box h1 {
+        font-size: 28px !important;
+    }
+
+    .right-box h3 {
+        font-size: 16px !important;
+    }
+
+    .container-2 ol {
+        font-size: 20px;
+    }
+
+    .container-3 ol {
+        font-size: 14px;
+    }
+}
